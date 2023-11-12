@@ -1,0 +1,134 @@
+.jobContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1280px;
+  gap: 2rem;
+  padding: 1.5rem 0rem;
+  overflow-x: scroll;
+  overflow-y: unset;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+
+  // media query for smaller screens
+  @media (max-width: 1080px) {
+    width: 95%;
+    // mask-image: none;
+    // -webkit-mask-image: none;
+    gap: 1rem;
+  }
+
+  margin-bottom: 130px;
+}
+
+.jobPanel {
+  min-width: 335px;
+  max-width: 335px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #e6e6e6;
+  border-radius: 1rem;
+  padding: 1rem;
+  scroll-snap-align: center;
+  gap: 1rem;
+
+  user-select: none;
+  
+  @media (max-width: 1080px) {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  // eaeaea to efefef
+  background: linear-gradient(#EFEFEF,#EAEAEA);
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.jobPanel:hover {
+    transform: scale(1.1) translateY(0);
+    // increase margins on both sides
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+// first and last child have a margin of 1rem
+.jobPanel:first-child {
+  margin-left: 5rem;
+  // media query for smaller screens
+  @media (max-width: 1080px) {
+    margin-left: 1rem;
+  }
+}
+
+.jobPanel:last-child {
+  margin-right: 5rem;
+  @media (max-width: 1080px) {
+    margin-right: 1rem;
+  }
+}
+
+.jobImage {
+  border-radius: 8px;
+}
+
+
+// Job Text
+
+.jobTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 8px;
+}
+
+.jobTextIcon {
+  fill: var(--text-secondary);
+}
+
+.jobTextTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.jobText {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.jobTags {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.jobTagPill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1rem;
+  background: var(--pill);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
