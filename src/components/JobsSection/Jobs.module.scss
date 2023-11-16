@@ -28,7 +28,7 @@
     gap: 1rem;
   }
 
-  margin-bottom: 130px;
+  margin-bottom: 1rem;
 }
 
 .jobPanel {
@@ -42,6 +42,7 @@
   padding: 1rem;
   scroll-snap-align: center;
   gap: 1rem;
+  position: relative;
 
   user-select: none;
   
@@ -57,9 +58,8 @@
 }
 
 .jobPanel:hover {
-    transform: scale(1.1) translateY(0);
-    // increase margins on both sides
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.05) !important;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 // first and last child have a margin of 1rem
@@ -80,6 +80,11 @@
 
 .jobImage {
   border-radius: 8px;
+  min-width: 48px;
+  min-height: 48px;
+  object-fit: scale-down;
+  object-position: center;
+  background-color: var(--background);
 }
 
 
@@ -131,4 +136,93 @@
   font-size: 12px;
   font-weight: 400;
   color: var(--text-secondary);
+}
+
+.loading {
+  height: 16px;
+  width: 40px;
+  background-color: var(--pill);
+  border-radius: 4px;
+
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.carouselSection {
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.jobDotsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+
+.jobButtonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 130px;
+}
+
+.jobButton {
+  background: linear-gradient(#EFEFEF, #EAEAEA);
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: var(--text-secondary);
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.jobButton:hover {
+  transform: scale(1.1);
+}
+
+.jobDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--text-secondary);
+  top: 1rem;
+  right: 1rem;
+  font-size: 12px;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--background);
+  background-color: green;
+  position: absolute;
 }

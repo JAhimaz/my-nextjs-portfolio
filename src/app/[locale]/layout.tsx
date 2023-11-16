@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import './globals.css'
 import { ReactNode } from 'react';
+import { Suspense } from 'react'
 
 type Props = {
   children: ReactNode;

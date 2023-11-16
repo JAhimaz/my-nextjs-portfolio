@@ -1,9 +1,8 @@
 'use client';
-import { useTranslations } from 'next-intl';
 import styles from '@/components/Page.module.scss';
-import Jobs from './Jobs/Jobs';
+import Jobs from './JobsSection/Jobs';
 import Header from './Header/Header';
-import ProjectsBanner from './ProjectsBanner/ProjectsBanner';
+import ProjectsBanner from './ProjectsSection/ProjectsBanner';
 
 const Page = () => {
 

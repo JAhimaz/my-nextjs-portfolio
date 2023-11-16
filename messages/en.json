@@ -1,5 +1,5 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "Header": {
+    "based-in": "📌 Based in {location}"
   }
 }

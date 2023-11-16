@@ -3,6 +3,12 @@
 :root {
   --background: #F6F6F6;
   --background-dark: #0D0D0D;
+  /* 1A1A1A to 0D0D0D 90degrees */
+  --dark-panel-background: #0f0f0f;
+  --dark-panel-background-light: #141414;
+  --dark-panel-background-single: #1A1A1A;
+  --dark-panel-stroke-unselect: #1f1f1f;
+  --dark-panel-stroke: #9b9b9b;
   --pill: #DBDBDB;
   /* 292929 to 727272 90degrees */
   --text-gray-gradient: linear-gradient(90deg, #292929 0%, #727272 100%);
