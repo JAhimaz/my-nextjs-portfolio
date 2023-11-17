@@ -8,12 +8,14 @@
   --dark-panel-background-light: #141414;
   --dark-panel-background-single: #1A1A1A;
   --dark-panel-stroke-unselect: #1f1f1f;
-  --dark-panel-stroke: #9b9b9b;
+  --dark-panel-stroke: #494949;
   --pill: #DBDBDB;
   /* 292929 to 727272 90degrees */
   --text-gray-gradient: linear-gradient(90deg, #292929 0%, #727272 100%);
   --text-primary: #292929;
   --text-secondary: #767676;
+  --text-dark-primary: #dbdbdb;
+  --text-dark-secondary: #a8a8a8;
 
   /* Pill Colours */
   font-family: 'Inter', sans-serif;
@@ -33,7 +35,7 @@ body {
 
 body {
   color: var(--text);
-  background: var(--background);
+  /* background: var(--background); */
 }
 
 a {

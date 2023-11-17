@@ -13,6 +13,7 @@ export type Experience = {
 
 export type Project = {
   name: string
+  subheader: string
   description: string
   preview: string
   tags: string[]

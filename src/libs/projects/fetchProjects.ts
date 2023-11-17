@@ -14,6 +14,7 @@ try {
       .then((rows) => {
         return rows.map((row: any) => ({
           name: row.name,
+          subheader: row.subheader,
           description: row.description,
           preview: row.preview[0].url,
           tags: row.tags.split(', '),

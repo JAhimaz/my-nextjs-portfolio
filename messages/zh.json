@@ -1,5 +1,8 @@
 {
   "Header": {
     "based-in": "📌 总部设在 {location}"
+  },
+  "Project-Details": {
+    "projects": ""
   }
 }

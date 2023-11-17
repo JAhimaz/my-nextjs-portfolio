@@ -1,5 +1,10 @@
 {
   "Header": {
     "based-in": "📌 Based in {location}"
+  },
+  "Project-Details": {
+    "projects": "My Projects",
+    "subheader": "Welcome to the heart of my portfolio, where innovation meets execution.",
+    "projectsDescription": "In this section, I invite you to explore a curated collection of projects that exemplify my passion for Software / Web Development. Each endeavor is a testament to my commitment to pushing boundaries, solving problems, and creating meaningful impact.\n\nAs technology evolves, so do I. Each project is an opportunity to learn, adapt, and refine my skills. Whether it's mastering a new programming language, exploring emerging trends, or embracing innovative approaches, I am committed to staying at the forefront of the ever-evolving landscape."
   }
 }

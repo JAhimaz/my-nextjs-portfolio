@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "run-script": "npx tsx",
+    "script:generate-lang": "yarn run-script scripts/generateLang.ts",
+    "script:regenerate-lang": "yarn run-script scripts/regenerateLangFiles.ts"
   },
   "dependencies": {
     "next": "14.0.1",

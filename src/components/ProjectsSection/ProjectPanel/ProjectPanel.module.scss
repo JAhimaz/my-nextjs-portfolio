@@ -9,6 +9,13 @@
   scroll-snap-align: center;
   cursor: pointer;
   transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+  }
 }
 
 .projectContainerLoading {
