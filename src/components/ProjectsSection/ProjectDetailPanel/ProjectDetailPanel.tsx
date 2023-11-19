@@ -35,7 +35,6 @@ const ProjectDetailPanel: FC<ProjectDetailsProps> = ({ projectDetails, changedPr
   return (
     <section className={styles.container}>
       <span ref={swiperRef} className={styles.swiper} />
-
       <span className={styles.header}>{projectDetails ? projectDetails.name : t('projects')}</span>
       <section className={styles.subContainer}>
         <span className={styles.subHeader}>{projectDetails ? projectDetails.subheader: t('subheader')}</span>

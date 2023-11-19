@@ -14,7 +14,8 @@ const ProjectPanel = Object.assign(
     const { project, setSelectedProject } = props;
 
     return (
-      <section className={styles.projectContainer} onClick={(element) => {
+      <section className={styles.projectContainer} 
+      onClick={(element) => {
 
               // set as currently selected
               setSelectedProject(project);
@@ -24,7 +25,23 @@ const ProjectPanel = Object.assign(
                 block: 'center',
               })
             }}>
-              {project.name}
+              <span className={styles.projectTitle}>
+                {project.name}
+              </span>
+              <span className={styles.projectSubheader}>
+                {project.subheader}
+              </span>
+              <section className={styles.projectTags}>
+              { project.tags.slice(0,5).map((tag, index) => (
+                <span key={index} className={styles.projectTagPill}>
+                  {tag}
+                </span>
+              ))}
+              </section>
+              <span className={styles.projectImageContainer} 
+              style={{
+                backgroundImage: `url(${project.preview})`,
+              }} />
       </section>
     )
   }, { Skeleton: ProjectPanelSkeleton }
