@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 5rem;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  transition: all 0.3s ease;
+  // blur background
+  backdrop-filter: blur(10px);
+}
+
+.navitem {
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  opacity: 1;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

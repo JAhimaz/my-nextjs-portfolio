@@ -1,6 +1,6 @@
 
+'use client';
 import styles from './ProjectPanel.module.scss';
-
 
 const ProjectPanelSkeleton = () => {
   

@@ -2,7 +2,9 @@ export type Experience = {
   company: string
   role: string
   description: string
+  descriptionZH: string
   logo: string
+  image: string
   tags: string[]
   startDate: string
   endDate: string

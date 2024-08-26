@@ -1,3 +1,4 @@
+'use client';
 import styles from './Jobs.module.scss';
 import { Experience } from '@/libs/types';
 import { useEffect, useState } from 'react';
@@ -71,7 +72,7 @@ const Jobs = () => {
   }
 
   return (
-    <>
+    <div>
       <section className={styles.jobContainer}>
         { loading ? Array.from({ length: 6 }).map((_, index) => (
           <JobPanel.Skeleton key={`${index}_job`} />
@@ -110,7 +111,8 @@ const Jobs = () => {
           </button>
         </section>
       </section>
-    </>
+      <div id="projects" />
+    </div>
   )
 }
 

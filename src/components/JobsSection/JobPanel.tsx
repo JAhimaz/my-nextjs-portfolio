@@ -1,8 +1,10 @@
+'use client';
 import Image from 'next/image';
 import { BiSolidCalendar } from 'react-icons/bi';
 import styles from './Jobs.module.scss';
 import { Experience } from '@/libs/types';
 import JobPanelSkeleton from './JobPanel.skeleton';
+import getLang from '@/libs/getLang';
 
 type JobProps = {
   index: number;
@@ -14,6 +16,7 @@ const JobPanel = Object.assign(
   (props: JobProps) => {
 
     const { index, job, setInViewJob } = props;
+    const language = getLang();
 
     return (
       <section className={styles.jobPanel} key={index} id={`${index}_job_panel`} onClick={(element) => {
@@ -54,7 +57,10 @@ const JobPanel = Object.assign(
                 <BiSolidCalendar className={styles.jobTextIcon} />
                 <span className={styles.jobText}>{job.startDate} - {job.endDate}</span>
               </div>
-              <span className={styles.jobText}>{job.description}</span>
+              <span className={styles.jobText}>{
+                // check the language
+                language === 'en' ? job.description : job.descriptionZH
+              }</span>
             </section>
             { job.tags.length > 0 && (
             <section className={styles.jobTags}>

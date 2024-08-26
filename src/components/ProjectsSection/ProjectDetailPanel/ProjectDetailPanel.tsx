@@ -1,3 +1,4 @@
+'use client';
 import { FC, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import styles from './ProjectDetailPanel.module.scss';
@@ -20,6 +21,7 @@ const ProjectDetailPanel: FC<ProjectDetailsProps> = ({ projectDetails, changedPr
       setImageLoaded(false);
       if (swiperRef.current) {
         swiperRef.current.style.opacity = '1'; // Reset opacity to 1
+        swiperRef.current.style.zIndex = '1'; // Reset z-index to 1
       }
     }
   }, [changedProject]);
@@ -29,6 +31,7 @@ const ProjectDetailPanel: FC<ProjectDetailsProps> = ({ projectDetails, changedPr
     if (swiperRef.current) {
       // Set opacity to 0 with a transition when image is loaded
       swiperRef.current.style.opacity = '0';
+      swiperRef.current.style.zIndex = '-1'; // Set z-index to -1 to prevent pointer events
     }
   };
 

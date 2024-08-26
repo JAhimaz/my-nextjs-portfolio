@@ -3,8 +3,42 @@
     "based-in": "📌 Based in {location}"
   },
   "Project-Details": {
-    "projects": "My Projects",
+    "projects": "My Projects 💼",
     "subheader": "Welcome to the heart of my portfolio, where innovation meets execution.",
     "projectsDescription": "In this section, I invite you to explore a curated collection of projects that exemplify my passion for Software / Web Development. Each endeavor is a testament to my commitment to pushing boundaries, solving problems, and creating meaningful impact.\n\nAs technology evolves, so do I. Each project is an opportunity to learn, adapt, and refine my skills. Whether it's mastering a new programming language, exploring emerging trends, or embracing innovative approaches, I am committed to staying at the forefront of the ever-evolving landscape."
+  },
+  "achievements": {
+    "achievements": "My Achievements 🏆",
+    "education": "My Education 🎓",
+    "technicals": "My Technical Skills 💻",
+    "achievementItems": {
+      "item1": "Founded Survival Asia Minecraft Community",
+      "item2": "Founded Sunway Blockchain Club",
+      "item3": "Hosted a Charity Event",
+      "item4": "Became a Speaker",
+      "item5": "Became a Mentor",
+      "item6": "Furthered my Education"
+    },
+    "educationItems": {
+      "item1": "Diploma in Information Technology (Sunway University)",
+      "item2": "Bachelor of Science in Computer Science (Sunway University / Lancaster University)",
+      "item3": "Master of Science in Computer Science (Sunway University / Lancaster University)"
+    },
+    "technicalSkills": {
+      "item1": "NextJS",
+      "item2": "TypeScript",
+      "item3": "ReactJS",
+      "item4": "NodeJS",
+      "item5": "Web3.JS / EthersJS",
+      "item6": "Git",
+      "item7": "Python",
+      "item8": "Java",
+      "item9": "NoSQL / SQL",
+      "item10": "AWS",
+      "item11": "Docker",
+      "item12": "Unity3D",
+      "item13": "3D Modelling",
+      "item14": "Photoshop"
+    }
   }
 }

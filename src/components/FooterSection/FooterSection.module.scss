@@ -1,0 +1,94 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: var(--background-dark);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    padding: 1rem 0;
+    height: 120vh;
+  }
+}
+
+.itemSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 800px;
+  padding: 1rem 0rem;
+  box-sizing: border-box;
+  color: white;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+}
+
+.pillSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0rem;
+  box-sizing: border-box;
+  color: white;
+}
+
+.projectTagPill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1rem;
+  background: var(--dark-panel-background-single);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.projectTagPill:hover {
+  background: var(--text-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.socialsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+
+.socialLogo {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}

@@ -29,10 +29,10 @@
   height: 100%;
   background: var(--dark-panel-background);
   /* Adjust the background color and gradient as needed */
-  z-index: 1;
+  z-index: 0;
   /* Ensure the swiper is above other content */
   opacity: 0;
-  transition: opacity 0.5s ease; // Adjust the duration and easing as needed
+  transition: all 0.5s ease; // Adjust the duration and easing as needed
   /* Add animation for a smoother effect */
 }
 

@@ -17,7 +17,8 @@ const fetchExperiences = async () => {
           company: row.company,
           role: row.role,
           description: row.description,
-          logo: row.logo,
+          descriptionZH: row.description_zh,
+          logo: row.logo ? row.logo : row.image[0].url,
           tags: row.tags.split(', '),
           startDate: row.startDate,
           endDate: row.endDate,
@@ -26,6 +27,8 @@ const fetchExperiences = async () => {
           active: row.active
         }))
       })
+
+      console.log(experiences)
 
       return experiences
 

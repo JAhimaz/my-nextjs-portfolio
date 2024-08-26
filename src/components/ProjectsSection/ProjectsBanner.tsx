@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import styles from './ProjectsBanner.module.scss';
 import ProjectDetailPanel from './ProjectDetailPanel/ProjectDetailPanel';

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+'use client';
 import styles from './ProjectPanel.module.scss';
 import { Project } from '@/libs/types';
 import ProjectPanelSkeleton from './ProjectPanel.skeleton';
