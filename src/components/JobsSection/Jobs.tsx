@@ -59,6 +59,7 @@ const Jobs = () => {
     const prevJob = document.getElementById(`${prevJobIndex}_job_panel`);
     
     prevJob?.scrollIntoView({
+      inline: 'start',
       behavior: 'smooth',
       block: 'center',
     });
