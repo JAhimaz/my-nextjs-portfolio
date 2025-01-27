@@ -78,6 +78,10 @@
   width: 100%;
   box-sizing: border-box;
   color: white;
+
+  @media (max-width: 768px) {
+      gap: 2rem;
+  }
 }
 
 .socialLogo {
