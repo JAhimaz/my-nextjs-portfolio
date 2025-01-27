@@ -20,9 +20,9 @@
       "item6": "继续我的教育"
     },
     "educationItems": {
-      "item1": "信息技术文凭（Sunway University）",
+      "item1": "计算机科学硕士（Sunway University / Lancaster University）",
       "item2": "计算机科学学士（Sunway University / Lancaster University）",
-      "item3": "计算机科学硕士（Sunway University / Lancaster University）"
+      "item3": "信息技术文凭（Sunway University）"
     },
     "technicalSkills": {
       "item1": "NextJS",

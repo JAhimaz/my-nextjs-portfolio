@@ -24,7 +24,7 @@ const Page = () => {
     };
   }, []); // Empty dependency array means this effect will only run once after the initial render
 
-  const backgroundColor = typeof window !== 'undefined' && (scrollPosition > 1 * window.innerHeight) ? '#0D0D0D' : '#F6F6F6';
+  const backgroundColor = typeof window !== 'undefined' && (scrollPosition > 0.95 * window.innerHeight) ? '#0D0D0D' : '#F6F6F6';
 
   const pageStyle = {
     backgroundColor: backgroundColor,

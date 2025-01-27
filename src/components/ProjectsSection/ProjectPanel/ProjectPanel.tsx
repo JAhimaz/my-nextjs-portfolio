@@ -29,7 +29,7 @@ const ProjectPanel = Object.assign(
                 {project.name}
               </span>
               <span className={styles.projectSubheader}>
-                {project.subheader}
+                {project.description}
               </span>
               <section className={styles.projectTags}>
               { project.tags.slice(0,5).map((tag, index) => (

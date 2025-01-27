@@ -1,10 +1,12 @@
 import { CSSProperties, FC } from 'react';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
 
 const IconsIndex = {
   Twitter: FaTwitter,
   Github: FaGithub,
   Linkedin: FaLinkedin,
+  Email: MdEmail,
 };
 
 const Index = {

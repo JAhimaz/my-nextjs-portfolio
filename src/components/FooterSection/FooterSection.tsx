@@ -3,6 +3,7 @@ import { Icon } from '@/libs/Icons';
 import styles from './FooterSection.module.scss';
 import { useTranslations } from 'next-intl'
 import Link from 'next/link';
+import { skills } from '@/libs/data';
 
 const FooterSection = () => {
 
@@ -16,9 +17,7 @@ const FooterSection = () => {
     return t(`educationItems.item${i + 1}`).toString()
   })
 
-  const technicalSkills = Array.from({length: 14}, (_, i) => {
-    return t(`technicalSkills.item${i + 1}`).toString()
-  })
+  const technicalSkills = skills
   
   return (
     <section className={styles.banner}>
@@ -51,6 +50,9 @@ const FooterSection = () => {
         </Link>
         <Link href="https://twitter.com/TheCoolerJosh" target='_blank'>
           <Icon icon="Twitter" className={styles.socialLogo} />
+        </Link>
+        <Link href="mailto:ahimaz.joshua@gmail.com" target='_blank'>
+          <Icon icon="Email" className={styles.socialLogo} />
         </Link>
       </section>
       <div id="connect" />

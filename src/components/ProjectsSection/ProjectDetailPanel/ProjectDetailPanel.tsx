@@ -40,7 +40,10 @@ const ProjectDetailPanel: FC<ProjectDetailsProps> = ({ projectDetails, changedPr
       <span ref={swiperRef} className={styles.swiper} />
       <span className={styles.header}>{projectDetails ? projectDetails.name : t('projects')}</span>
       <section className={styles.subContainer}>
-        <span className={styles.subHeader}>{projectDetails ? projectDetails.subheader: t('subheader')}</span>
+        {/* <span className={styles.subHeader}>{projectDetails ? projectDetails.subheader: t('subheader')}</span> */}
+        <span className={styles.description}>
+          {projectDetails ? projectDetails.description : t('projectsDescription')}
+        </span>
         {projectDetails && (
           <div className={styles.projectPreview}>
             <Image
@@ -56,9 +59,6 @@ const ProjectDetailPanel: FC<ProjectDetailsProps> = ({ projectDetails, changedPr
             />
           </div>
         )}
-        <span className={styles.description}>
-          {projectDetails ? projectDetails.description : t('projectsDescription')}
-        </span>
       </section>
     </section>
   );

@@ -1,9 +1,9 @@
 export const education = [
   {
-    degree: "MSc in Computer Science",
-    school: "Sunway University / Lancaster University",
-    yearStart: 2021,
-    yearEnd: 2023,
+    degree: "Diploma in Information Technology",
+    school: "Sunway University",
+    yearStart: 2017,
+    yearEnd: 2019,
     logo: "https://varrn-sunway.org/wp-content/uploads/2021/02/Sunway-University-A-Class-Above-white.png"
   },
   {
@@ -14,10 +14,10 @@ export const education = [
     logo: "https://varrn-sunway.org/wp-content/uploads/2021/02/Sunway-University-A-Class-Above-white.png"
   },
   {
-    degree: "Diploma in Information Technology",
-    school: "Sunway University",
-    yearStart: 2017,
-    yearEnd: 2019,
+    degree: "MSc in Computer Science",
+    school: "Sunway University / Lancaster University",
+    yearStart: 2021,
+    yearEnd: 2023,
     logo: "https://varrn-sunway.org/wp-content/uploads/2021/02/Sunway-University-A-Class-Above-white.png"
   },
 ]
@@ -28,6 +28,12 @@ export const skills = [
   "Frontend Development",
   "FireBase",
   "Web3.js / Ethers.js",
+  "APIs",
+  "GraphQL",
+  "REST",
+  "HTML",
+  "CSS",
+  "JavaScript",
   "Git",
   "Vite",
   "Webpack / Rollup",
