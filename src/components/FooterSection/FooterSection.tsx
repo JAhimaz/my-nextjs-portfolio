@@ -1,9 +1,9 @@
 'use client';
-import { Icon } from '@/libs/Icons';
+import { Icon } from '../../libs/Icons';
 import styles from './FooterSection.module.scss';
 import { useTranslations } from 'next-intl'
 import Link from 'next/link';
-import { skills } from '@/libs/data';
+import { skills } from '../../libs/data';
 
 const FooterSection = () => {
 

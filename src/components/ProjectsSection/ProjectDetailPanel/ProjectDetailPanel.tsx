@@ -2,7 +2,7 @@
 import { FC, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import styles from './ProjectDetailPanel.module.scss';
-import { Project } from '@/libs/types';
+import { Project } from '../../../libs/types';
 import { useTranslations } from 'next-intl';
 
 type ProjectDetailsProps = {

@@ -1,5 +1,5 @@
 'use client';
-import { Project } from '@/libs/types';
+import { Project } from '../../../libs/types';
 import ProjectPanel from '../ProjectPanel/ProjectPanel';
 import styles from './ProjectList.module.scss';
 import { FC } from 'react';

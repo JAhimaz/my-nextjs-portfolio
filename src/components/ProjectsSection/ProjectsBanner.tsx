@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import styles from './ProjectsBanner.module.scss';
 import ProjectDetailPanel from './ProjectDetailPanel/ProjectDetailPanel';
 import ProjectList from './ProjectList/ProjectList';
-import { Project } from '@/libs/types';
-import fetchProjects from '@/libs/projects/fetchProjects';
+import { Project } from '../../libs/types';
+import fetchProjects from '../../libs/projects/fetchProjects';
 
 const ProjectsBanner = () => {
 

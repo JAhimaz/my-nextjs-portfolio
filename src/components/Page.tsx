@@ -1,5 +1,5 @@
 'use client';
-import styles from '@/components/Page.module.scss';
+import styles from '../components/Page.module.scss';
 import Jobs from './JobsSection/Jobs';
 import Header from './Header/Header';
 import ProjectsBanner from './ProjectsSection/ProjectsBanner';

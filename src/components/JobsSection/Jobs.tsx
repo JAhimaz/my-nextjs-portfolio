@@ -1,8 +1,8 @@
 'use client';
 import styles from './Jobs.module.scss';
-import { Experience } from '@/libs/types';
+import { Experience } from '../../libs/types';
 import { useEffect, useState } from 'react';
-import fetchExperiences from '@/libs/experiences/fetchExperiences';
+import fetchExperiences from '../../libs/experiences/fetchExperiences';
 import JobPanel from './JobPanel';
 
 import { FaChevronLeft } from "react-icons/fa";

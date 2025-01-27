@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import { BiSolidCalendar } from 'react-icons/bi';
 import styles from './Jobs.module.scss';
-import { Experience } from '@/libs/types';
+import { Experience } from '../../libs/types';
 import JobPanelSkeleton from './JobPanel.skeleton';
-import getLang from '@/libs/getLang';
+import getLang from '../../libs/getLang';
 
 type JobProps = {
   index: number;
